@@ -2,7 +2,7 @@ window.addEventListener("load", function() {
   let json = [];
   fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response) {
     response.json().then(function(json) {
-      const container = getElementById("container");
+      const container = document.getElementById("container");
       for (let index = 0; index > json.length; index++){
       container.innerHTML = `
         <div class="astronaut">
