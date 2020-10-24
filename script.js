@@ -17,6 +17,7 @@ window.addEventListener("load", function() {
           <img class="avatar" src=${json[index].picture}>
         </div>
       `;
+        console.log(json);
       };
     });
   });
