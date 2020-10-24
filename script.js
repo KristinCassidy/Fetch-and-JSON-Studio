@@ -2,7 +2,6 @@ window.addEventListener("load", function() {
   fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response) {
     response.json().then(function(json) {
       const container = getElementById("container");
-      
       for(let index = 0; index>json.length; index++){
       container.innerHTML = `
         <div class="astronaut">
