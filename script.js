@@ -1,9 +1,9 @@
 window.addEventListener("load", function() {
   fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response) {
     response.json().then(function(json) {
-      json.sort((a, b) => {
-      return a.hoursInSpace - b.hoursInSpace;
-      });
+      //json.sort((a, b) => {
+      //return a.hoursInSpace - b.hoursInSpace;
+      //});
       for (let index = 0; index < json.length; index++) {
         let astronautBio = document.createElement("div");
           astronautBio.innerHTML = `
