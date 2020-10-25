@@ -18,15 +18,13 @@ window.addEventListener("load", function() {
               </div>
               <img class="avatar" src=${json[index].picture}>
             </div>
-          `;
-        if (json[index].active === true) {
-          let true = document.getElementById("activeStatus");
-          true.style.color = "green";
-          
+          `;  
         };
         document.getElementById("container").appendChild(astronautBio);
-        
       };
+              if (json[index].active === true) {
+          let true = document.getElementById("activeStatus");
+          true.style.color = "green";                   
     });
   });
 });
