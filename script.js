@@ -12,14 +12,20 @@ window.addEventListener("load", function() {
                 <h3>${json[index].firstName} ${json[index].lastName}</h3>
                 <ul>
                   <li>Hours in Space: ${json[index].hoursInSpace}</li>
-                  <li>Active: ${json[index].active}</li>
+                  <li id="activeStatus">Active: ${json[index].active}</li>
                   <li>Skills: ${json[index].skills.join(", ")}</li>
                 </ul>
               </div>
               <img class="avatar" src=${json[index].picture}>
             </div>
           `;
+        if (json[index].active === true) {
+          document.getElementById("activeStatus");
+          activeStatus.style.color = "green";
+          
+        };
         document.getElementById("container").appendChild(astronautBio);
+        
       };
     });
   });
