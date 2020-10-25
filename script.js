@@ -19,7 +19,6 @@ window.addEventListener("load", function() {
               <img class="avatar" src=${json[index].picture}>
             </div>
           `;  
-        };
         document.getElementById("container").appendChild(astronautBio);
       };
               if (json[index].active === true) {
