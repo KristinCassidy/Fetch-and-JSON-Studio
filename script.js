@@ -20,8 +20,8 @@ window.addEventListener("load", function() {
             </div>
           `;
         if (json[index].active === true) {
-          let active = document.getElementById("activeStatus");
-          active.style.color = "green";
+          let true = document.getElementById("activeStatus");
+          true.style.color = "green";
           
         };
         document.getElementById("container").appendChild(astronautBio);
