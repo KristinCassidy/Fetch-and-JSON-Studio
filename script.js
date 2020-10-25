@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
       return a.hoursInSpace - b.hoursInSpace;
       });
       //for (let index = 0; index < json.length; index++) {
-      for each (let astronaut in json) {
+      for (let item in json) {
         let astronautBio = document.createElement("div");
           astronautBio.innerHTML = `
             <div class="astronaut">
