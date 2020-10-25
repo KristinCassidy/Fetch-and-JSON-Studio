@@ -2,7 +2,10 @@ window.addEventListener("load", function() {
   fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response) {
     response.json().then(function(json) {
       //const container = document.getElementById("container");
-      for (let index = 0; index < json.length; index++){
+      for (let index = 0; index < json.length; index++) {
+        for ( let i = 0; i < json[index].skills.length; i++) {
+          json[index].skills.join(, );
+        }
         let astronautBio = document.createElement("div");
           astronautBio.innerHTML = `
             <div class="astronaut">
