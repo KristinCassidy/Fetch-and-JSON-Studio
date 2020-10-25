@@ -4,8 +4,10 @@ window.addEventListener("load", function() {
       json.sort((a, b) => {
       return a.hoursInSpace - b.hoursInSpace;
       });
-      //for (let index = 0; index < json.length; index++) {
-      for (let item in json) {
+      for (item in json.skills) {
+        " " + item;
+      }
+      for (let index = 0; index < json.length; index++) {
         let astronautBio = document.createElement("div");
           astronautBio.innerHTML = `
             <div class="astronaut">
