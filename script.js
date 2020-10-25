@@ -1,7 +1,9 @@
 window.addEventListener("load", function() {
   fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response) {
     response.json().then(function(json) {
-      //const container = document.getElementById("container");
+      json.sort((a, b) => {
+      return a.houreInSpace - b.houreInSpace;
+      });
       for (let index = 0; index < json.length; index++) {
         let astronautBio = document.createElement("div");
           astronautBio.innerHTML = `
