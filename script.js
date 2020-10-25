@@ -4,10 +4,8 @@ window.addEventListener("load", function() {
       json.sort((a, b) => {
       return a.hoursInSpace - b.hoursInSpace;
       });
-      for (item in json.skills) {
-        " " + item;
-      }
       for (let index = 0; index < json.length; index++) {
+        json[index].skills.join(, ");
         let astronautBio = document.createElement("div");
           astronautBio.innerHTML = `
             <div class="astronaut">
@@ -16,7 +14,7 @@ window.addEventListener("load", function() {
                 <ul>
                   <li>Hours in Space: ${json[index].hoursInSpace}</li>
                   <li>Active: ${json[index].active}</li>
-                  <li>Skills: ${json[index].skills.join(",  ")}</li>
+                  <li>Skills: ${json[index].skills/*.join(",  ")*/}</li>
                 </ul>
               </div>
               <img class="avatar" src=${json[index].picture}>
