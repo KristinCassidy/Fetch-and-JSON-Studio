@@ -25,9 +25,9 @@ window.addEventListener("load", function() {
 //           if (trueStatus.innerHTML == "Active: true") {
 //             trueStatus.style.color ="green";
 //           }};
-          document.getElementById("activeStatus");
+          let x =document.getElementById("activeStatus");
           if (json[index].active === true) {
-            let trueStat = active.createAttribute("style");
+            let trueStat = x.createAttribute("style");
             trueStat.value = "color:green";
           };
       };               
