@@ -2,7 +2,7 @@ window.addEventListener("load", function() {
     fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response) {
     response.json().then(function(json) {
       json.sort((a, b) => {
-      return a.hoursInSpace - b.hoursInSpace;
+      return b.hoursInSpace - a.hoursInSpace;
       });
       for (let index = 0; index < json.length; index++) {
         let astronautBio = document.createElement("div");
@@ -20,13 +20,16 @@ window.addEventListener("load", function() {
             </div>
           `;  
            document.getElementById("container").appendChild(astronautBio);
+          function checkIfActive(astronaut) {
+    if(astronaut.active == true) {
+        return `<span style="color:green">${astronaut.active}</span>`
+    } else {
+        return `${astronaut.active}`;
+    };
+};
       };               
     });
   });
 });
 
-function checkIfActive(astronaut) {
-    if(astronaut.active == true) {
-        return `<span style="color:green">${astronaut.active}</span>`
-    };
-};
+
