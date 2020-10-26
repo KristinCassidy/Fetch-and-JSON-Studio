@@ -21,7 +21,8 @@ window.addEventListener("load", function() {
           `;  
         let active = document.getElementById("activeStatus");
           if (json[index].active === true) {
-            active.style.color ="green";
+            let trueStat = active.createAttribute("style");
+            trueStat.value = "green";
           };
         document.getElementById("container").appendChild(astronautBio);
 //         for (let index = 0; index < json.length; index++) {
