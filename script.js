@@ -5,11 +5,6 @@ window.addEventListener("load", function() {
       return a.hoursInSpace - b.hoursInSpace;
       });
       for (let index = 0; index < json.length; index++) {
-      var trueStatus = document.getElementById("activeStatus");
-          if (trueStatus.innerHTML == "Active: true") {
-            trueStatus.style.color ="green";
-          }};
-      for (let index = 0; index < json.length; index++) {
         let astronautBio = document.createElement("div");
           astronautBio.innerHTML = `
             <div class="astronaut">
@@ -24,6 +19,10 @@ window.addEventListener("load", function() {
               <img class="avatar" src=${json[index].picture}>
             </div>
           `;  
+        let active = document.getElementById("activeStatus").innerHTML;
+          if (active === "Active: true") {
+            activeStatus.style.color ="green";
+          };
         document.getElementById("container").appendChild(astronautBio);
 //         for (let index = 0; index < json.length; index++) {
 //         let trueStatus = document.getElementById("activeStatus");
