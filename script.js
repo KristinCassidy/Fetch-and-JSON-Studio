@@ -25,11 +25,11 @@ window.addEventListener("load", function() {
             </div>
           `;  
         document.getElementById("container").appendChild(astronautBio);
-        for (let index = 0; index < json.length; index++) {
-        let trueStatus = document.getElementById("activeStatus");
-          if (trueStatus.innerHTML == "Active: true") {
-            trueStatus.style.color ="green";
-          }};
+//         for (let index = 0; index < json.length; index++) {
+//         let trueStatus = document.getElementById("activeStatus");
+//           if (trueStatus.innerHTML == "Active: true") {
+//             trueStatus.style.color ="green";
+//           }};
       };               
     });
   });
