@@ -12,11 +12,11 @@ window.addEventListener("load", function() {
                 <h3>${json[index].firstName} ${json[index].lastName}</h3>
                 <ul>
                   <li>Hours in Space: ${json[index].hoursInSpace}</li>
-                  <li id="activeStatus">Active: ${json[index].active;
-                     let trueStatus = document.getElementById("activeStatus");
+                  <li id="activeStatus">Active: ${json[index].active};
+                    ${let trueStatus = document.getElementById("activeStatus");
                         if (trueStatus.innerHTML == "Active: true") {
-                        trueStatus.style.color ="green";
-                        }}</li>
+                        trueStatus.style.color ="green"};
+                        }</li>
                   <li>Skills: ${json[index].skills.join(", ")}</li>
                 </ul>
               </div>
