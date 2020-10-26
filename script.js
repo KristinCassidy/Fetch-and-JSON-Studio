@@ -24,7 +24,7 @@ window.addEventListener("load", function() {
         let trueStatus = document.getElementById("activeStatus");
           if (trueStatus.innerHTML == "Active: true") {
             trueStatus.style.color ="green";
-          }}:
+          }};
       };               
     });
   });
