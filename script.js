@@ -20,11 +20,10 @@ window.addEventListener("load", function() {
             </div>
           `;  
            document.getElementById("container").appendChild(astronautBio);
-       
-        let trueStatus = document.getElementById("activeStatus");
-          if (trueStatus.innerHTML == "Active: true") {
-            trueStatus.style.color ="green";
-          };
+          let trueStatus = document.getElementById("activeStatus");
+            if (trueStatus.innerHTML == "Active: true") {
+              trueStatus.style.color ="green";
+            };
       };               
     });
   });
