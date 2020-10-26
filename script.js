@@ -28,3 +28,9 @@ window.addEventListener("load", function() {
     });
   });
 });
+
+function checkIfActive(astronaut) {
+    if(astronaut.active == true) {
+        return `<span style="color:green">${astronaut.active}</span>
+}
+}
