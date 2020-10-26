@@ -19,8 +19,8 @@ window.addEventListener("load", function() {
               <img class="avatar" src=${json[index].picture}>
             </div>
           `;  
-        let active = document.getElementById("activeStatus").innerHTML;
-          if (active === "Active: true") {
+        let active = document.getElementById("activeStatus");
+          if (active.innerHTML === "Active: true") {
             activeStatus.style.color ="green";
           };
         document.getElementById("container").appendChild(astronautBio);
