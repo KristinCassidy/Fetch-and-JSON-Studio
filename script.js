@@ -19,17 +19,18 @@ window.addEventListener("load", function() {
               <img class="avatar" src=${json[index].picture}>
             </div>
           `;  
-        let active = document.getElementById("activeStatus");
-          if (json[index].active === true) {
-            let trueStat = active.createAttribute("style");
-            trueStat.value = "green";
-          };
+
         document.getElementById("container").appendChild(astronautBio);
 //         for (let index = 0; index < json.length; index++) {
 //         let trueStatus = document.getElementById("activeStatus");
 //           if (trueStatus.innerHTML == "Active: true") {
 //             trueStatus.style.color ="green";
 //           }};
+          let active = document.getElementById("activeStatus");
+          if (json[index].active === true) {
+            let trueStat = active.createAttribute("style");
+            trueStat.value = "green";
+          };
       };               
     });
   });
