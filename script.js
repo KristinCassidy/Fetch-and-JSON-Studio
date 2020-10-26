@@ -12,11 +12,7 @@ window.addEventListener("load", function() {
                 <h3>${json[index].firstName} ${json[index].lastName}</h3>
                 <ul>
                   <li>Hours in Space: ${json[index].hoursInSpace}</li>
-                  <li id="activeStatus">Active: ${json[index].active};
-                    ${let trueStatus = document.getElementById("activeStatus");
-                        if (trueStatus.innerHTML == "Active: true") {
-                        trueStatus.style.color ="green"};
-                        }</li>
+                  <li id="activeStatus">Active: ${json[index].active}</li>
                   <li>Skills: ${json[index].skills.join(", ")}</li>
                 </ul>
               </div>
@@ -24,10 +20,11 @@ window.addEventListener("load", function() {
             </div>
           `;  
         document.getElementById("container").appendChild(astronautBio);
-       // let trueStatus = document.getElementById("activeStatus");
-        //  if (trueStatus.innerHTML == "Active: true") {
-         //   trueStatus.style.color ="green";
-         // }
+        for(item in json) {
+        let trueStatus = document.getElementById("activeStatus");
+          if (trueStatus.innerHTML == "Active: true") {
+            trueStatus.style.color ="green";
+          }}:
       };               
     });
   });
