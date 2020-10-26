@@ -20,10 +20,6 @@ window.addEventListener("load", function() {
             </div>
           `;  
            document.getElementById("container").appendChild(astronautBio);
-//           let trueStatus = document.getElementById("activeStatus");
-//             if (trueStatus.innerHTML == "Active: true") {
-//               trueStatus.style.color ="green";
-//             };
       };               
     });
   });
@@ -31,6 +27,6 @@ window.addEventListener("load", function() {
 
 function checkIfActive(astronaut) {
     if(astronaut.active == true) {
-        return `<span style="color:green">${astronaut.active}</span>
-}
-}
+        return `<span style="color:green">${astronaut.active}</span>`
+    };
+};
