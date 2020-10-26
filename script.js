@@ -20,9 +20,9 @@ window.addEventListener("load", function() {
             </div>
           `;  
         document.getElementById("container").appendChild(astronautBio);
-        let true = astronautBio.getElementById("activeStatus");
-          if (true.innerHTML == "Active: true") {
-            true.style.color ="green";
+        let trueStatus = astronautBio.getElementById("activeStatus");
+          if (trueStatus.innerHTML == "Active: true") {
+            trueStatus.style.color ="green";
           }
       };               
     });
